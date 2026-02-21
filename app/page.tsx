@@ -1,24 +1,19 @@
 'use client';
-import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 
+const MotionH1 = motion.h1;
+
 export default function Home() {
-  const router = useRouter();
-
-  const startJourney = () => {
-    router.push('/journey/keyword');
-  };
-
   return (
     <div className="page-container flex flex-col justify-center items-center">
-      <motion.h1
+      <MotionH1
         className="drip mb-12 text-center"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
       >
         WELCOME
-      </motion.h1>
+      </MotionH1>
 
       <motion.button
         onClick={startJourney}
