@@ -36,3 +36,42 @@ Built with modern tools → **Next.js, Tailwind CSS, Framer Motion**.
 
 
 ## 📁 Repo Structure
+DORK/
+├── app/ # Next.js App Directory
+│ ├── layout.tsx
+│ ├── page.tsx
+│ └── globals.css
+├── components/ # UI Components
+│ ├── Landing.tsx
+│ ├── KeywordStep.tsx
+│ ├── CategoryStep.tsx
+│ ├── SubCategoryStep.tsx
+│ └── Toast.tsx
+├── lib/ # Query Builder Logic
+│ └── queryBuilder.ts
+├── public/ # Static assets (images/fonts)
+├── package.json # Project meta + deps
+├── package-lock.json
+├── next.config.js
+└── tsconfig.json
+
+> `node_modules` and `.next` are excluded — dependencies are installed via `npm install`.  
+
+
+
+## 🚀 Simple Usage
+
+### 🧪 Local Testing (Optional)
+```bash
+git clone https://github.com/Mudassar-khan-M2K/dork.git
+cd dork
+npm install
+npm run dev
+
+
+
+
+
+❤️ Show Some Love
+
+If you like this project, give it a ⭐ and share with others! 🚀
